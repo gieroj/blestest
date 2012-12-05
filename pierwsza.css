@@ -1,0 +1,151 @@
+body
+{
+    width: 720px;
+    margin: 0px auto;
+    
+}
+
+#kontener
+{
+	position: absolute;
+	width: 720px;
+	height: 650px;
+	background-color: #d3d3d3;
+}
+
+#ustawienia
+{
+	width:100%;
+	height:30px;
+	background-color: #b3b3b3;
+}
+
+h3
+{
+	
+	margin-left: 10px;
+	
+}
+
+
+#next_previous
+{
+	margin-bottom:10px;
+	background-color: #c3c3c3;
+}
+
+#n_p
+{
+	margin-left:10px;
+}
+
+#next_previous2
+{
+	background-color: #c3c3c3;
+}
+
+#n_p2
+{
+	margin-left:10px;
+}
+
+#radio1
+{
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+#radio11
+{
+	position: absolute;
+	margin-left:200px;
+	margin-top:-90px;
+	margin-bottom:10px;
+}
+
+#check1
+{
+	background-color: #c3c3c3;
+}
+
+#checkbox1
+{
+	margin-left:10px;
+}
+
+#check2
+{
+	background-color: #c3c3c3;
+}
+
+#checkbox2
+{
+	margin-left:10px;
+}
+
+#check3
+{
+	background-color: #c3c3c3;
+}
+
+#checkbox3
+{
+	margin-left:10px;
+}
+
+#tekst1
+{
+	margin-top:10px;
+	margin-left:10px;
+}
+
+#tekst2
+{
+	background-color: #c3c3c3;
+	
+
+}
+#tekst2w
+{
+	margin-left:10px;
+}
+
+#tagi
+{
+	margin-top:10px;
+	margin-left:10px;
+	resize: none; 
+}
+
+#combobox
+{
+	margin-top:15px;
+	background-color: #c3c3c3;
+}
+
+#comboboxw
+{
+	margin-left:10px;
+}
+
+#bt1
+{
+	margin-left:10px;
+}
+
+#tekst3
+{
+	background-color: #c3c3c3;
+	margin-top:15px;
+}
+
+#text3w
+{
+	margin-left:10px;
+}
+
+#text3_zajety
+{
+	width:200px;
+	display: inline;
+}

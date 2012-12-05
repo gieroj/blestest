@@ -1,0 +1,53 @@
+
+#menu1_lewy
+{
+	position:absolute;
+	width:54px;
+	height:54px;
+	margin-top: -400px;
+	background-image:url(src/image/prev2.png); 
+}
+
+#menu1_prawy
+{
+	position:absolute;
+	width:54px;
+	height:54px;
+	margin-top: -400px;
+	margin-left : 666px;
+	background-image:url(src/image/next2.png); 
+}
+
+#menu1_timer
+{
+	position:absolute;
+	width:90px;
+	height:30px;
+	margin-top: -130px;
+	margin-left : 630px;
+	background-image:url(src/image/pod_timer.png); 
+}
+
+#menu1_czas
+{
+	margin-left:12px;
+	margin-top:3px;
+	color:#E8E8E8;
+}
+
+
+div.pagination {
+	padding: 3px;
+	margin: 3px;
+}
+
+div.pagination a {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border: 1px solid #AAAADD;
+	
+	text-decoration: none; /* no underline */
+	color: #000099;
+}
+div.pagination a:hover, div.pagination a:active {
+	border: 1px solid #000099;
