@@ -4,16 +4,16 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
-  	<script type="text/javascript" src="../test//ckeditor/ckeditor.js"></script>
-	<script type="text/javascript" src="../test//ckeditor/adapters/jquery.js"></script>
+  	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="ckeditor/adapters/jquery.js"></script>
    	<script type="text/javascript" src="jquery.cookie.js"></script>
   
-    <script src="../test/src/jquery.contextMenu.js" type="text/javascript"></script>
+    <script src="src/jquery.contextMenu.js" type="text/javascript"></script>
 	<script src="jquery_moj.js" type="text/javascript"></script>
 	<script src="jquery_moj2.js" type="text/javascript"></script>
 	<script src="next.js" type="text/javascript"></script>
 	<script src="jquery.timer.js" type="text/javascript"></script>
-    <link href="../test/src/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
+    <link href="src/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="jquery-ui.css" />
 	<link rel="stylesheet" href="styl.css" />
 	<link rel="stylesheet" href="menu.css" />

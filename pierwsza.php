@@ -15,7 +15,7 @@
 </head>
 <body>	
 	<div id="kontener">
-		<form  action="http://localhost/aptana/test/dodawanie.php">
+		<form >
 			<div id="ustawienia" ><h3>  Ustawienia :</h3></div> 
 			</br>
 			
@@ -81,7 +81,7 @@
 				</div>
 			</div>
 			</br>
-			<button id="bt1" name="bt1" type="submit">Start</button>
+			<button id="bt1" name="bt1" type="button">Start</button>
 		</form>
 	</div>
 	

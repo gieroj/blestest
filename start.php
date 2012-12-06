@@ -3,7 +3,8 @@
    	$baza_host=("localhost"); // Przeważnie localhost
    	$baza_login=("gieroj"); // Login do bazy
    	$baza_haslo=("gieroj1pl"); // Hasło do bazy
-  	$baza_nazwa=("test"); // Nazwa bazy
+  	$baza_nazwa1=("test"); // Nazwa bazy
+  	$baza_nazwa2=("testy"); // Nazwa bazy
 	
 	$bool = htmlspecialchars(trim($_POST['bool']));
 	$tagi = trim($_POST['tagi']);
@@ -17,15 +18,19 @@
 	
 	if($bool=="1")
 	{
-		$polaczenie = mysql_connect($baza_host, $baza_login, $baza_haslo);
-   		$db = mysql_select_db($baza_nazwa);
+		$polaczenie1 = mysql_connect($baza_host, $baza_login, $baza_haslo,false);
+		$db1=mysql_select_db($baza_nazwa1,$polaczenie1);
+		$dodaj  = "INSERT INTO testy (nazwa,grupa,tagi,menu,wstecz,pasek,timer,timer_czas,pages) VALUES ('$nazwa','$grupa','$tagi','$menu','$wstecz','$pasek','$timer','$timer_czas',0)";
+   		$lol=mysql_query($dodaj) or die(mysql_error());
+		echo $lol;
+		$polaczenie2 = mysql_connect($baza_host, $baza_login, $baza_haslo,true);
+		$db2=mysql_select_db($baza_nazwa2,$polaczenie2);
 		$nazwa_spaces=str_replace (" ","_",$nazwa);
 		$nowa_tabela= "CREATE TABLE $nazwa_spaces(strona int, rodzaj_pytania int, poprawnosc_pytania bit, tresc_odpowiedzi text, punktacja double)";
-		mysql_query($nowa_tabela) or die(mysql_error());
-		$dodaj  = "INSERT INTO testy (nazwa,grupa,tagi,menu,wstecz,pasek,timer,timer_czas,pages) VALUES ('$nazwa','$grupa','$tagi','$menu','$wstecz','$pasek','$timer','$timer_czas',0)";
-   		mysql_query($dodaj) or die(mysql_error());
-		
-   		mysql_close($polaczenie);
+		$lol=mysql_query($nowa_tabela) or die(mysql_error());
+		echo $lol;
+   		mysql_close($polaczenie1);
+		mysql_close($polaczenie2);
 	}
 	echo "ok";
 ?>
