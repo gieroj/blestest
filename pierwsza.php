@@ -33,6 +33,15 @@
 			<script>
 			    var i = 0;
 			    $("#text3").mouseleave(function(){
+			    	var wyjatki=new Array("#", "%", "&", "*", ":", "<", ">", "?", "/", "\"", "\{", "|", "\}",".",",",";");
+			    	$tekst_do_zbadania=$("#text3").val();
+			    	for(i=0;i< wyjatki.length;i++ ){
+			    		$index_wyjatku = $tekst_do_zbadania.indexOf(wyjatki[i])
+			    		if(  $index_wyjatku>0){
+			    			$tekst_do_zbadania= setCharAt($tekst_do_zbadania,$index_wyjatku,'_');
+			    			$("#text3").val($tekst_do_zbadania);
+			    		}
+			    	}
 			      $.ajax({
 				   	type: "POST",
 				   	url: "start_nazwa.php",
@@ -40,7 +49,6 @@
 				   		nazwa:($('#text3').val())
 					},
 				   	success: function($zwrot){
-				   		console.log($zwrot);
 				   		if($zwrot.length<2){
 				   			$("#text3").css("color", "black");
 				   			$("#text3_zajety").text(' OK');
