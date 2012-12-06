@@ -54,6 +54,7 @@ $(document).ready(function() {
 		$.cookie("nazwa",$('#text3').val());
 		
 		$new="1";
+		$poprawne=false;
 		$.ajax({
 		   	type: "POST",
 		   	url: "start.php",
@@ -70,7 +71,8 @@ $(document).ready(function() {
 		   	success: function($zwrot){
 		   		
 		   			console.log($zwrot);
-		   			
+		   			if($zwrot==11)
+		   				window.setTimeout(function(){location.href="http://localhost/aptana/test/blestest/dodawanie.php";}, 2100);
 		   		
 		    // Usuwamy wiadomość o poprawnym dodaniu użytkownika po 2 sekundach
 		    setTimeout(function(){ $("div.dodano").fadeOut(200)}, 2000);
@@ -78,7 +80,7 @@ $(document).ready(function() {
 	   		}
 	   		
 	  	});
-		window.setTimeout(function(){location.href="http://localhost/aptana/test/blestest/dodawanie.php";}, 4100);
+			
 		
 	});
 });

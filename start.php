@@ -23,6 +23,7 @@
 		$dodaj  = "INSERT INTO testy (nazwa,grupa,tagi,menu,wstecz,pasek,timer,timer_czas,pages) VALUES ('$nazwa','$grupa','$tagi','$menu','$wstecz','$pasek','$timer','$timer_czas',0)";
    		$lol=mysql_query($dodaj) or die(mysql_error());
 		echo $lol;
+		
 		$polaczenie2 = mysql_connect($baza_host, $baza_login, $baza_haslo,true);
 		$db2=mysql_select_db($baza_nazwa2,$polaczenie2);
 		$nazwa_spaces=str_replace (" ","_",$nazwa);
@@ -32,5 +33,4 @@
    		mysql_close($polaczenie1);
 		mysql_close($polaczenie2);
 	}
-	echo "ok";
 ?>
