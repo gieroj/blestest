@@ -6,7 +6,7 @@
   	$baza_nazwa=("test"); // Nazwa bazy
   	
 	$nazwa= trim($_POST['nazwa']);
-	$nazwa_spaces=str_replace (" ","_",$nazwa);
+	$nazwa_spaces=str_replace (" ","_i_",$nazwa);
 	
 	$polaczenie = mysql_connect($baza_host, $baza_login, $baza_haslo);
 	$db = mysql_select_db($baza_nazwa);

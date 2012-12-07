@@ -15,8 +15,7 @@
 	<script src="jquery.timer.js" type="text/javascript"></script>
     <link href="src/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="jquery-ui.css" />
-	<link rel="stylesheet" href="styl.css" />
-	<link rel="stylesheet" href="menu.css" />
+	<link rel="stylesheet" href="dodawanie.css" />
 	
 	
 </head>

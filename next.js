@@ -57,6 +57,7 @@ $(document).ready(function() {
 								+"height:"+$("#"+tablica[z]+i).css('height')+";\n"
 								+"top:"+$("#"+tablica[z]+i).css('top')+";\n"
 								+"left:"+$("#"+tablica[z]+i).css('left')+";\n"
+								+"z-index:"+(((-1)*i)+10).toString()+";\n"
 								+"}"),
 								css:("\n#"+tablica[z]+i+"\n{\n"
 								+"background-color:"+$("#"+tablica[z]+i).css('background-color')+";\n"
@@ -67,7 +68,7 @@ $(document).ready(function() {
 								+"box-shadow:"+$("#"+tablica[z]+i).css('box-shadow')+";\n"
 								+$gradient
 								+"}\n"),
-								html:("\n\<div id=\""+tablica[z]+i+"\"\>\<div id=\""+tablica[z]+i+"_text\"\>"+$("#"+tablica[z]+i+"_text").html()+"\</div\>\</div\>\n"),
+								html:("\n \<div id=\""+tablica[z]+i+"\"\>\<div id=\""+tablica[z]+i+"_text\"\>"+$("#"+tablica[z]+i+"_text").html()+"\</div\>\</div\>\n"),
 								numer_strony:("1")
 							},
 						   	success: function(){
