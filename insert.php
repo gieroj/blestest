@@ -10,7 +10,11 @@
    	$bool = htmlspecialchars(trim($_POST['bool']));
    	$miejsce=trim($_POST['miejsce']);
     $html = trim($_POST['html']);
-	$numer_strony=htmlspecialchars(trim($_POST['numer_strony']));;
+	$numer_strony=htmlspecialchars(trim($_POST['numer_strony']));
+	$nazwa_testu =trim($_POST['nazwa_testu']);
+	$nazwa_spaces=str_replace (" ","_i_",$nazwa_testu);
+	
+	$przerwa=htmlspecialchars("\n");
 	
 	function poczatek_html($numer_str){
 		$poczatek_html="<!DOCTYPE html>
@@ -28,7 +32,7 @@
 		<body> \n";
 		return $poczatek_html;
 	}
-	$przerwa=htmlspecialchars("\n");
+	
 	$poczatek_css="body
 		{
 		    width: 720px;
@@ -36,16 +40,19 @@
 		    
 		}";
 	$koniec_html="\n</div>\n</body>\n</html>";
+	$nazwa_folderu=("./testy/".$nazwa_spaces);
 	
  	if($bool=="1"){
-		$ourFileName =$numer_strony."wh.css";
+ 		
+		mkdir($nazwa_folderu,0777);
+		$ourFileName =$nazwa_folderu."/".$numer_strony."wh.css";
 		$ourFileHandle = fopen($ourFileName, 'w') or die("can't open file");
 		fwrite($ourFileHandle,$poczatek_css);
 		fwrite($ourFileHandle, $miejsce);
 		
 		fclose($ourFileHandle);
 		
-		$ourFName =$numer_strony.".html";
+		$ourFName =$nazwa_folderu."/".$numer_strony.".html";
 		$ourFHandle = fopen($ourFName, 'w') or die("can't open file");
 		fwrite($ourFHandle, poczatek_html($numer_strony));
 		fwrite($ourFHandle, $html);
@@ -53,34 +60,33 @@
 		
 		fclose($ourFHandle);
 		
-		$ourFileName = $numer_strony."c.css";
+		$ourFileName =$nazwa_folderu."/".$numer_strony."c.css";
 		$ourFileHandle = fopen($ourFileName, 'w') or die("can't open file");
 		fwrite($ourFileHandle, $css);
 		
 		fclose($ourFileHandle);
 	}
 	else if($bool=="2"){
-		$ourFName = $numer_strony.".html";
+		$ourFName =$nazwa_folderu."/".$numer_strony.".html";
 		$ourFHandle = fopen($ourFName, 'a') or die("can't open file");
 		fwrite($ourFHandle, $koniec_html);
 
 		fclose($ourFHandle);
 	}
 	else{
-		$ourFileName = $numer_strony."wh.css";
+		$ourFileName =$nazwa_folderu."/".$numer_strony."wh.css";
 		$ourFileHandle = fopen($ourFileName, 'a') or die("can't open file");
 		fwrite($ourFileHandle, $miejsce);
 		
 		fclose($ourFileHandle);
 		
-		$ourFName = $numer_strony.".html";
+		$ourFName = $nazwa_folderu."/".$numer_strony.".html";
 		$ourFHandle = fopen($ourFName, 'a') or die("can't open file");
 		fwrite($ourFHandle, $html);
 		fwrite($ourFHandle, $przerwa);
-		
 		fclose($ourFHandle);
 		
-		$ourFileName = $numer_strony."c.css";
+		$ourFileName = $nazwa_folderu."/".$numer_strony."c.css";
 		$ourFileHandle = fopen($ourFileName, 'a') or die("can't open file");
 		fwrite($ourFileHandle, $css);
 		

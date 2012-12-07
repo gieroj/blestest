@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	$('#next').click(function(el) {
-		
+		$ktora_strona=$.cookie("strony");
+		$ktora_strona++;
+		$.cookie("strony",$ktora_strona);
 		if(el.which==1){
 			var tablica = ['pytanie','check','radio','text']
 			//console.log(el.which);
@@ -21,7 +23,8 @@ $(document).ready(function() {
 					+"background-image:"+$('#miejsce').css('background-image')+";\n"
 					+"}"),
 					html:("\n\<div id=\"miejsce\"\>"),
-					numer_strony:("1")
+					numer_strony:($ktora_strona),
+					nazwa_testu:($.cookie("nazwa"))
 				},
 			   	success: function(){
 			    // Usuwamy wiadomość o poprawnym dodaniu użytkownika po 2 sekundach
@@ -69,7 +72,8 @@ $(document).ready(function() {
 								+$gradient
 								+"}\n"),
 								html:("\n \<div id=\""+tablica[z]+i+"\"\>\<div id=\""+tablica[z]+i+"_text\"\>"+$("#"+tablica[z]+i+"_text").html()+"\</div\>\</div\>\n"),
-								numer_strony:("1")
+								numer_strony:($ktora_strona),
+								nazwa_testu:($.cookie("nazwa"))
 							},
 						   	success: function(){
 						    // Usuwamy wiadomość o poprawnym dodaniu użytkownika po 2 sekundach
@@ -98,7 +102,8 @@ $(document).ready(function() {
 								+"overflow:hidden;\n"
 								+"margin-top:"+$("#"+tablica[z]+i+"_text").css('margin-top')+";\n"
 								+"}\n"),
-								numer_strony:("1")
+								numer_strony:($ktora_strona),
+								nazwa_testu:($.cookie("nazwa"))
 							},
 						   	success: function(){
 						    // Usuwamy wiadomość o poprawnym dodaniu użytkownika po 2 sekundach

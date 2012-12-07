@@ -1,0 +1,34 @@
+body
+		{
+		    width: 720px;
+		    margin: 0px;
+		    
+		}#miejsce
+{
+width:720px;
+height:480px;
+}#pytanie0
+{
+position: absolute;
+width:118.166666px;
+height:133.166666px;
+top:140px;
+left:40px;
+z-index:10;
+}#check0
+{
+position: absolute;
+width:578.166666px;
+height:33.166666px;
+top:150px;
+left:80px;
+z-index:10;
+}#text0
+{
+position: absolute;
+width:108.166666px;
+height:323.166666px;
+top:90px;
+left:290px;
+z-index:10;
+}
