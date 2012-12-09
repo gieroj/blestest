@@ -1,8 +1,13 @@
 $(document).ready(function() {
 	$('#next').click(function(el) {
-		$ktora_strona=$.cookie("strony");
+		if($.cookie("strony")==$.cookie("strona")){
+			$ile_stron=$.cookie("strony");
+			$ile_stron++;
+			$.cookie("strony",$ile_stron);
+		}
+		$ktora_strona=$.cookie("strona");
 		$ktora_strona++;
-		$.cookie("strony",$ktora_strona);
+		$.cookie("strona",$ktora_strona);
 		if(el.which==1){
 			var tablica = ['pytanie','check','radio','text']
 			//console.log(el.which);

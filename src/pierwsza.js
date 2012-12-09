@@ -53,6 +53,7 @@ $(document).ready(function() {
 		$.cookie("tagi",$('#tagi').val());
 		$.cookie("nazwa",$('#text3').val());
 		$.cookie("strony",0);
+		$.cookie("strona",0);
 		$.cookie("edycja",0);
 		$new="1";
 		$poprawne=false;

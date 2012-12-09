@@ -12,6 +12,7 @@
 	<script src="src/jquery_moj.js" type="text/javascript"></script>
 	<script src="src/jquery_moj2.js" type="text/javascript"></script>
 	<script src="src/next.js" type="text/javascript"></script>
+	<script src="src/prev.js" type="text/javascript"></script>
 	<script src="src/jquery.timer.js" type="text/javascript"></script>
     <link href="src/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="jquery-ui.css" />

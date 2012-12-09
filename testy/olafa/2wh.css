@@ -1,0 +1,26 @@
+body
+		{
+		    width: 720px;
+		    margin: 0px;
+		    
+		}#miejsce
+{
+width:720px;
+height:480px;
+}#check0
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:350px;
+left:140px;
+z-index:10;
+}#radio0
+{
+position: absolute;
+width:88.166666px;
+height:123.166666px;
+top:310px;
+left:180px;
+z-index:10;
+}
