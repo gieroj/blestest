@@ -6,13 +6,13 @@
   	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
   	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
 	<script type="text/javascript" src="ckeditor/adapters/jquery.js"></script>
-   	<script type="text/javascript" src="jquery.cookie.js"></script>
+   	<script type="text/javascript" src="src/jquery.cookie.js"></script>
   
     <script src="src/jquery.contextMenu.js" type="text/javascript"></script>
-	<script src="jquery_moj.js" type="text/javascript"></script>
-	<script src="jquery_moj2.js" type="text/javascript"></script>
-	<script src="next.js" type="text/javascript"></script>
-	<script src="jquery.timer.js" type="text/javascript"></script>
+	<script src="src/jquery_moj.js" type="text/javascript"></script>
+	<script src="src/jquery_moj2.js" type="text/javascript"></script>
+	<script src="src/next.js" type="text/javascript"></script>
+	<script src="src/jquery.timer.js" type="text/javascript"></script>
     <link href="src/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="jquery-ui.css" />
 	<link rel="stylesheet" href="dodawanie.css" />

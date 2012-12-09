@@ -1,0 +1,42 @@
+body
+		{
+		    width: 720px;
+		    margin: 0px;
+		    
+		}#miejsce
+{
+width:720px;
+height:480px;
+}#pytanie0
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:170px;
+left:40px;
+z-index:10;
+}#check0
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:360px;
+left:140px;
+z-index:10;
+}#radio0
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:330px;
+left:280px;
+z-index:10;
+}#text0
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:290px;
+left:410px;
+z-index:10;
+}

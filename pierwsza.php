@@ -5,10 +5,10 @@
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
 
-   	<script type="text/javascript" src="jquery.cookie.js"></script>
-  	<script type="text/javascript" src="pierwsza.js"></script>
+   	<script type="text/javascript" src="src/jquery.cookie.js"></script>
+  	<script type="text/javascript" src="src/pierwsza.js"></script>
 
-	<script src="jquery.timer.js" type="text/javascript"></script>
+	<script src="src/jquery.timer.js" type="text/javascript"></script>
 
 	<link rel="stylesheet" href="pierwsza.css" />
 	
