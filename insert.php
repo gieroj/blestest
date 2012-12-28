@@ -36,8 +36,7 @@
 	$poczatek_css="body
 		{
 		    width: 720px;
-		    margin: 0px;
-		    
+		    margin: 0px auto;
 		}";
 	$koniec_html="\n</div>\n</body>\n</html>";
 	$nazwa_folderu=("./testy/".$nazwa_spaces);

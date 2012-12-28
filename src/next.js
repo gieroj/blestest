@@ -4,10 +4,13 @@ $(document).ready(function() {
 			$ile_stron=$.cookie("strony");
 			$ile_stron++;
 			$.cookie("strony",$ile_stron);
+			$.cookie("edycja","0");
+			$ktora_strona=$.cookie("strona");
+			$ktora_strona++;
+			$.cookie("strona",$ktora_strona);
 		}
 		$ktora_strona=$.cookie("strona");
-		$ktora_strona++;
-		$.cookie("strona",$ktora_strona);
+		
 		if(el.which==1){
 			var tablica = ['pytanie','check','radio','text']
 			//console.log(el.which);
@@ -133,6 +136,11 @@ $(document).ready(function() {
 			    setTimeout(function(){ $("div.dodano").fadeOut(200) }, 2000);
 		   		}
 		  	});
+		}
+		if($.cookie("strony")!=$.cookie("strona")){
+			$ktora_strona=$.cookie("strona");
+			$ktora_strona++;
+			$.cookie("strona",$ktora_strona);
 		}
 		//odswierzenie okna po 4 sekundach
 		window.setTimeout(nowa, 3000);
