@@ -1,0 +1,41 @@
+body
+		{
+		    width: 720px;
+		    margin: 0px auto;
+		}#miejsce
+{
+width:720px;
+height:480px;
+}#radio0
+{
+position: absolute;
+width:98.166666px;
+height:103.166666px;
+top:250px;
+left:310px;
+z-index:10;
+}#radio1
+{
+position: absolute;
+width:98.166666px;
+height:113.166666px;
+top:340px;
+left:210px;
+z-index:9;
+}#radio2
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:430px;
+left:310px;
+z-index:8;
+}#text0
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:240px;
+left:210px;
+z-index:10;
+}

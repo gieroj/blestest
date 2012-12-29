@@ -1,0 +1,25 @@
+body
+		{
+		    width: 720px;
+		    margin: 0px 0px;
+		}#miejsce
+{
+width:720px;
+height:480px;
+}#check0
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:430px;
+left:260px;
+z-index:10;
+}#radio0
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:300px;
+left:250px;
+z-index:10;
+}
