@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	$('#bt1').click(function(e) {
+		document.body.style.cursor = "wait";
+		$('#bt1').css('cursor', 'wait');
 		$menu=0,$wstecz=1,$pasek=1,$timer=0,$timer_czas="01:20:00";
 		if( $('#radio1 input:radio:checked').val()=="on")
 		{
@@ -51,7 +53,9 @@ $(document).ready(function() {
 		}
 		
 		$.cookie("tagi",$('#tagi').val());
-		$.cookie("nazwa",$('#text3').val());
+		var str=$('#text3').val();
+		var n=str.replace(" ","_i_"); 
+		$.cookie("nazwa",n);
 		$.cookie("strony",0);
 		$.cookie("strona",0);
 		$.cookie("edycja",0);

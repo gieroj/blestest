@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	
-	if($.cookie("edycja")=="1" && $.cookie("strona")>"0" &&  $.cookie("strona")!=$.cookie("strony") ){
-		load_file('./testy/niemam/'+$.cookie("strona")+'wh.css',"css");
-		console.log('./testy/niemam/'+$.cookie("strona")+'wh.css');
+	if( $.cookie("strona")>='0' &&  $.cookie("strona")!=$.cookie("strony") ){
+		load_file('./testy/'+$.cookie("nazwa")+'/'+$.cookie("strona")+'wh.css',"css");
+		console.log('./testy/'+$.cookie("nazwa")+'/'+$.cookie("strona")+'wh.css');
 		/*$.getJSON("http://localhost/aptana/test/blestest/testy/niemam/2wh.css",
 	  	function(data) {
 	    	$.each(data.items, function(i,item){
@@ -16,8 +16,10 @@ $(document).ready(function() {
 	
 	
 	$('#previous').click(function(el) {
-		if($.cookie("strona")>"0")
-		$.cookie("edycja","1");
+		
+		document.body.style.cursor = "wait";
+		$('#previous').css('cursor', 'wait');
+		
 		$ktora_strona=$.cookie("strona");
 		$ktora_strona--;
 		$.cookie("strona",$ktora_strona);

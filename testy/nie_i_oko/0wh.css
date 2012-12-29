@@ -1,0 +1,41 @@
+body
+		{
+		    width: 720px;
+		    margin: 0px auto;
+		}#miejsce
+{
+width:720px;
+height:480px;
+}#pytanie0
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:180px;
+left:90px;
+z-index:10;
+}#pytanie1
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:340px;
+left:90px;
+z-index:9;
+}#check0
+{
+position: absolute;
+width:18.166666px;
+height:193.166666px;
+top:180px;
+left:190px;
+z-index:10;
+}#check1
+{
+position: absolute;
+width:28.166666px;
+height:203.166666px;
+top:170px;
+left:60px;
+z-index:9;
+}

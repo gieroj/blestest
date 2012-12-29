@@ -1,0 +1,49 @@
+body
+		{
+		    width: 720px;
+		    margin: 0px auto;
+		}#miejsce
+{
+width:720px;
+height:480px;
+}#check0
+{
+position: absolute;
+width:28.166666px;
+height:123.166666px;
+top:190px;
+left:200px;
+z-index:10;
+}#check1
+{
+position: absolute;
+width:28.166666px;
+height:223.166666px;
+top:190px;
+left:310px;
+z-index:9;
+}#radio0
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:190px;
+left:210px;
+z-index:10;
+}#radio1
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:290px;
+left:220px;
+z-index:9;
+}#radio2
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:410px;
+left:220px;
+z-index:8;
+}

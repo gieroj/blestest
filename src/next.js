@@ -1,16 +1,13 @@
 $(document).ready(function() {
 	$('#next').click(function(el) {
-		if($.cookie("strony")==$.cookie("strona")){
-			$ile_stron=$.cookie("strony");
-			$ile_stron++;
-			$.cookie("strony",$ile_stron);
-			$.cookie("edycja","0");
-			$ktora_strona=$.cookie("strona");
-			$ktora_strona++;
-			$.cookie("strona",$ktora_strona);
-		}
+		
+		document.body.style.cursor = "wait";
+		$('#next').css('cursor', 'wait');
+		
 		$ktora_strona=$.cookie("strona");
 		
+		console.log("strona"+$ktora_strona);
+		console.log("strony"+$.cookie("strony"));
 		if(el.which==1){
 			var tablica = ['pytanie','check','radio','text']
 			//console.log(el.which);
@@ -137,14 +134,22 @@ $(document).ready(function() {
 		   		}
 		  	});
 		}
+		
+		//odswierzenie okna po 4 sekundach
+		window.setTimeout(nowa, 3000);
+		if($.cookie("strony")==$.cookie("strona")){
+			$ile_stron=$.cookie("strony");
+			$ile_stron++;
+			$.cookie("strony",$ile_stron);
+			$ktora_strona=$.cookie("strona");
+			$ktora_strona++;
+			$.cookie("strona",$ktora_strona);
+		}
 		if($.cookie("strony")!=$.cookie("strona")){
 			$ktora_strona=$.cookie("strona");
 			$ktora_strona++;
 			$.cookie("strona",$ktora_strona);
 		}
-		//odswierzenie okna po 4 sekundach
-		window.setTimeout(nowa, 3000);
-		
 	});
 	
 });
