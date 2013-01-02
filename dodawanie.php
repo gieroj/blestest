@@ -17,7 +17,7 @@
     <link href="src/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="jquery-ui.css" />
 	<link rel="stylesheet" href="dodawanie.css" />
-	
+	<script src="src/paginator.js" type="text/javascript"></script>
 	
 </head>
 <body>
@@ -120,16 +120,39 @@
 		</div>
 		
 		
-		<div id="play0"><img src="images/play.png" alt="play" height="35" width="35" style="margin-left:10px; margin-top:-2px;" > 
+		<div id="play0"><img src="images/play.png" alt="play" height="35" width="35" style="margin-left:6px; margin-top:-2px;" > 
 		</div>
 		
 		<div id="timer0"><div id="timer0_text" style="text-align: center; ">1:15:00</div>
 		</div>
 		
-		<div id="previous"><img src="images/previous.png" alt="play" height="35" width="35" style="margin-left:10px; margin-top:-2px;" > 
+		<div id="previous"><img src="images/previous.png" alt="play" height="35" width="35" style="margin-left:6px; margin-top:-2px;" > 
 		</div>
 		
-		<div id="koniec"><div id="koniec_text" style="text-align: center; ">Koniec</div> 
+		<div id="anuluj"><div id="anuluj_text" style="text-align: center;margin-top:4px; ">Anuluj</div> 
+		</div>
+		
+		<div id="paginator0"><div id="paginator0_text" style="text-align: center;margin-top:4px; ">1</div> 
+		</div>
+		<div id="paginator1"><div id="paginator1_text" style="text-align: center;margin-top:4px; ">2</div> 
+		</div>
+		<div id="paginator2"><div id="paginator2_text" style="text-align: center;margin-top:4px; ">3</div> 
+		</div>
+		<div id="paginator3"><div id="paginator3_text" style="text-align: center;margin-top:4px; ">4</div> 
+		</div>
+		<div id="paginator4"><div id="paginator4_text" style="text-align: center;margin-top:4px; ">5</div> 
+		</div>
+		<div id="paginator5"><div id="paginator5_text" style="text-align: center;margin-top:4px; ">6</div> 
+		</div>
+		<div id="paginator6"><div id="paginator6_text" style="text-align: center;margin-top:4px; ">7</div> 
+		</div>
+		<div id="paginator7"><div id="paginator7_text" style="text-align: center;margin-top:4px; ">8</div> 
+		</div>
+		<div id="paginator8"><div id="paginator8_text" style="text-align: center;margin-top:4px; ">9</div> 
+		</div>
+		
+		
+		<div id="koniec"><div id="koniec_text" style="text-align: center;margin-top:4px; ">Koniec</div> 
 		</div>
 		
 		<div id="next"><img src="images/next.png" alt="play" height="35" width="35" style="margin-left:10px; margin-top:-2px;" > 

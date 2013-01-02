@@ -201,9 +201,30 @@
 #koniec
 {
 	
-	margin-left: 310px;
+	margin-left: 565px;
 	margin-top: -35px;
-	width: 98px; 
+	width: 83px; 
+	height: 33px;
+	background: silver;
+	
+	border:1px solid #808080;
+	cursor:default;
+	overflow:hidden; 
+	border-radius:5px;
+	box-shadow: 3px 5px 5px #888888;
+	background-image: linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	background-image: -o-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+}
+
+#anuluj
+{
+	
+	margin-left: 70px;
+	margin-top: -35px;
+	width: 78px; 
 	height: 33px;
 	background: silver;
 	
@@ -222,9 +243,9 @@
 #next
 {
 	
-	margin-left: 650px;
+	margin-left: 660px;
 	margin-top: -35px;
-	width: 53px; 
+	width: 48px; 
 	height: 33px;
 	background: silver;
 	
@@ -243,8 +264,8 @@
 #previous
 {
 	margin-top: 20px;
-	margin-left: 15px;
-	width: 53px; 
+	margin-left: 10px;
+	width: 48px; 
 	height: 33px;
 	background: silver;
 	
@@ -269,6 +290,64 @@
 {
 	width: 100%;
 	height: 10px;
+}
+
+
+#paginator1, #paginator2, #paginator3, #paginator4, #paginator5, #paginator6, #paginator7, #paginator8, #paginator9, #paginator0
+{
+	margin-top: -35px;
+	width : 33px;
+	height: 33px;
+	background: silver;
+	
+	border:1px solid #808080;
+	cursor:default;
+	overflow:hidden; 
+	border-radius:5px;
+	box-shadow: 3px 5px 5px #888888;
+	background-image: linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	background-image: -o-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+}
+
+#paginator0
+{
+	margin-left: 160px;
+}
+
+#paginator1
+{
+	margin-left: 205px;
+}
+#paginator2
+{
+	margin-left: 250px;
+}
+#paginator3
+{
+	margin-left: 295px;
+}
+#paginator4
+{
+	margin-left: 340px;
+}
+#paginator5
+{
+	margin-left: 385px;
+}
+#paginator6
+{
+	margin-left: 430px;
+}
+#paginator7
+{
+	margin-left: 475px;
+}
+#paginator8
+{
+	margin-left: 520px;
 }
 
 .labels > ul {

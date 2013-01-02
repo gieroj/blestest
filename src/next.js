@@ -6,8 +6,8 @@ $(document).ready(function() {
 		
 		$ktora_strona=$.cookie("strona");
 		
-		console.log("strona"+$ktora_strona);
-		console.log("strony"+$.cookie("strony"));
+		//console.log("strona"+$ktora_strona);
+		//console.log("strony"+$.cookie("strony"));
 		if(el.which==1){
 			var tablica = ['pytanie','check','radio','text']
 			//console.log(el.which);
@@ -43,7 +43,7 @@ $(document).ready(function() {
 				{
 					var poz= $("#"+tablica[z]+i).position();
 					if(poz.top< $sumah){
-						console.log($("#"+tablica[z]+i).css('width'));
+						//console.log($("#"+tablica[z]+i).css('width'));
 						 
 						//var places= $("#"+tablica[z]+i).position();
 						$grad=$.cookie("#"+tablica[z]+i+"_gradient");
@@ -95,7 +95,7 @@ $(document).ready(function() {
 				{
 					var poz= $("#"+tablica[z]+i).position();
 					if(poz.top< $sumah){
-						console.log($("#"+tablica[z]+i).css('width'));
+						//console.log($("#"+tablica[z]+i).css('width'));
 						 
 						$.ajax({
 						   	type: "POST",
@@ -125,7 +125,7 @@ $(document).ready(function() {
 			   	type: "POST",
 			   	url: "insert.php",
 			   	data: {bool:$new,
-			   		numer_strony:("1")
+			   		numer_strony:($ktora_strona)
 			   		
 				},
 			   	success: function(){
@@ -136,7 +136,7 @@ $(document).ready(function() {
 		}
 		
 		//odswierzenie okna po 4 sekundach
-		window.setTimeout(nowa, 3000);
+		window.setTimeout(nowa, 4000);
 		if($.cookie("strony")==$.cookie("strona")){
 			$ile_stron=$.cookie("strony");
 			$ile_stron++;
