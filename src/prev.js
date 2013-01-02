@@ -159,6 +159,7 @@ $(document).ready(function() {
 		$ktora_strona=$.cookie("strona");
 		$ktora_strona--;
 		$.cookie("strona",$ktora_strona);
+		document.close();
 		//odswierzenie okna po 4 sekundach
 		window.setTimeout(nowa, 4000);
 	});

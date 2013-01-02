@@ -15,4 +15,10 @@ background-image: -o-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+}#text0_text
+{
+text-align:center;
+line-height:18.9px;
+overflow:hidden;
+margin-top:4px;
 }

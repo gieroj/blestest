@@ -135,6 +135,7 @@ $(document).ready(function() {
 		  	});
 		}
 		
+		document.close();
 		//odswierzenie okna po 4 sekundach
 		window.setTimeout(nowa, 4000);
 		if($.cookie("strony")==$.cookie("strona")){
