@@ -30,7 +30,8 @@
     background-color: #d3d3d3;
     left:10px;
     top:100px;
-    position:fixed;
+    position:absolute;
+    z-index:10;
 }
 
 
@@ -51,6 +52,8 @@
 	background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 	background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 	background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	
+	z-index:0 !important;
 }
 
 #pytanie1_text, #pytanie0_text,#pytanie2_text, #pytanie3_text, #pytanie4_text, #pytanie5_text, #pytanie6_text, #pytanie7_text, #pytanie8_text, #pytanie9_text
@@ -58,6 +61,12 @@
 	line-height: 0.2cm;
 	overflow:hidden; 
 	margin-top: -6px;
+}
+#pytanie0_gradient,#pytanie1_gradient,#pytanie2_gradient,#pytanie3_gradient,#pytanie4_gradient,#pytanie5_gradient,#pytanie6_gradient,#pytanie7_gradient,#pytanie8_gradient,#pytanie9_gradient
+{
+	width:10px;
+	height:10px;
+	position: absolute;
 }
 
 #check0,#check1,#check2,#check3,#check4,#check5,#check6,#check7,#check8,#check9
@@ -77,6 +86,8 @@
 	background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 	background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 	background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	
+	z-index:0 !important;
 }
 
 #check0_text,#check1_text,#check2_text,#check3_text,#check4_text,#check5_text,#check6_text,#check7_text,#check8_text,#check9_text
@@ -84,6 +95,20 @@
 	line-height: 0.2cm;
 	overflow:hidden; 
 	margin-top: -12px;
+}
+
+#check0_punktacja,#check1_punktacja,#check2_punktacja,#check3_punktacja,#check4_punktacja,#check5_punktacja,#check6_punktacja,#check7_punktacja,#check8_punktacja,#check9_punktacja
+{
+	width:10px;
+	height:10px;
+	position: absolute;
+}
+
+#check0_gradient,#check1_gradient,#check2_gradient,#check3_gradient,#check4_gradient,#check5_gradient,#check6_gradient,#check7_gradient,#check8_gradient,#check9_gradient
+{
+	width:10px;
+	height:10px;
+	position: absolute;
 }
 
 #radio0,#radio1,#radio2,#radio3,#radio4,#radio5,#radio6,#radio7,#radio8,#radio9
@@ -104,6 +129,8 @@
 	background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 	background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 	background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	
+	z-index:0 !important;
 }
 
 #radio0_text,#radio1_text,#radio2_text,#radio3_text,#radio4_text,#radio5_text,#radio6_text,#radio7_text,#radio8_text,#radio9_text
@@ -113,24 +140,36 @@
 	margin-top: -12px;
 }
 
+#radio0_punktacja,#radio1_punktacja,#radio2_punktacja,#radio3_punktacja,#radio4_punktacja,#radio5_punktacja,#radio6_punktacja,#radio7_punktacja,#radio8_punktacja,#radio9_punktacja
+{
+	width:10px;
+	height:10px;
+	position: absolute;
+}
+
+#radio0_gradient,#radio1_gradient,#radio2_gradient,#radio3_gradient,#radio4_gradient,#radio5_gradient,#radio6_gradient,#radio7_gradient,#radio8_gradient,#radio9_gradient
+{
+	width:10px;
+	height:10px;
+	position: absolute;
+}
+
 #text0,#text1,#text2,#text3,#text4,#text5,#text6,#text7,#text8,#text9
 {
 	left: 370px;
 	width: 98px; 
 	height: 33px;
-	background: silver;
+	background-color : white;
 	
 	
 	border:1px solid #808080;
 	cursor:default;
 	overflow:hidden; 
 	border-radius:5px;
+	background-color:#FF;
 	box-shadow: 3px 5px 5px #888888;
-	background-image: linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
-	background-image: -o-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
-	background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
-	background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
-	background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	
+	z-index:0 !important;
 }
 
 #text0_text,#text1_text,#text2_text,#text3_text,#text4_text,#text5_text,#text6_text,#text7_text,#text8_text,#text9_text
@@ -140,6 +179,13 @@
     height:100%;
 	line-height: 0.5cm;
 	margin-top: 4px;
+}
+
+#text0_punktacja,#text1_punktacja,#text2_punktacja,#text3_punktacja,#text4_punktacja,#text5_punktacja,#text6_punktacja,#text7_punktacja,#text8_punktacja,#text9_punktacja
+{
+	width:10px;
+	height:10px;
+	position: absolute;
 }
 
 #play0
@@ -160,6 +206,8 @@
 	background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 	background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 	background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	
+	z-index:0 !important;
 }
 
 #play0_text
@@ -189,6 +237,8 @@
 	background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 	background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 	background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+	
+	z-index:0 !important;
 }
 
 #timer0_text

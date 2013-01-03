@@ -309,7 +309,8 @@ function zapis_obecnej(el,strona_wczytania){
 			   	type: "POST",
 			   	url: "insert.php",
 			   	data: {bool:$new,
-			   		numer_strony:($ktora_strona)
+			   		numer_strony:($ktora_strona),
+					nazwa_testu:($.cookie("nazwa"))
 			   		
 				},
 			   	success: function(){
@@ -325,5 +326,5 @@ function zapis_obecnej(el,strona_wczytania){
 }
 
 function nowa(){
-	window.location = location.href ;
+	window.location.reload();
 }

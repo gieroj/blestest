@@ -52,7 +52,16 @@
 		<div id="pytanie0"><div id="pytanie0_text"><p style="text-align: center; ">Pytanie ?</p></div>
 		</div>
 		
-		
+		<p id="pytanie0_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="pytanie1_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="pytanie2_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="pytanie3_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="pytanie4_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="pytanie5_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="pytanie6_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="pytanie7_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="pytanie8_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="pytanie9_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
 		
 		<div id="check9"><div id="check9_text"><p style="text-align: center; "><input type="checkbox" name="vehicle" value="Bike">Pytanie ?</p></div>
 		</div>
@@ -75,6 +84,27 @@
 		<div id="check0"><div id="check0_text"><p style="text-align: center; "><input type="checkbox" name="vehicle" value="Bike" >Pytanie ?</p></div>
 		</div>
 		
+		<p id="check0_punktacja" style="visibility:hidden;">0</p>
+		<p id="check1_punktacja" style="visibility:hidden;">0</p>
+		<p id="check2_punktacja" style="visibility:hidden;">0</p>
+		<p id="check3_punktacja" style="visibility:hidden;">0</p>
+		<p id="check4_punktacja" style="visibility:hidden;">0</p>
+		<p id="check5_punktacja" style="visibility:hidden;">0</p>
+		<p id="check6_punktacja" style="visibility:hidden;">0</p>
+		<p id="check7_punktacja" style="visibility:hidden;">0</p>
+		<p id="check8_punktacja" style="visibility:hidden;">0</p>
+		<p id="check9_punktacja" style="visibility:hidden;">0</p>
+		
+		<p id="check0_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="check1_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="check2_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="check3_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="check4_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="check5_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="check6_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="check7_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="check8_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="check9_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
 		
 		<div id="radio9"><div id="radio9_text"><p style="text-align: center; "><input type="radio" name="animal" value="bee" >Pytanie ?</p></div>
 		</div>
@@ -97,6 +127,27 @@
 		<div id="radio0"><div id="radio0_text"><p style="text-align: center; "><input type="radio" name="animal" value="bee" >Pytanie ?</p></div>
 		</div>
 		
+		<p id="radio0_punktacja" style="visibility:hidden;">0</p>
+		<p id="radio1_punktacja" style="visibility:hidden;">0</p>
+		<p id="radio2_punktacja" style="visibility:hidden;">0</p>
+		<p id="radio3_punktacja" style="visibility:hidden;">0</p>
+		<p id="radio4_punktacja" style="visibility:hidden;">0</p>
+		<p id="radio5_punktacja" style="visibility:hidden;">0</p>
+		<p id="radio6_punktacja" style="visibility:hidden;">0</p>
+		<p id="radio7_punktacja" style="visibility:hidden;">0</p>
+		<p id="radio8_punktacja" style="visibility:hidden;">0</p>
+		<p id="radio9_punktacja" style="visibility:hidden;">0</p>
+		
+		<p id="radio0_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="radio1_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="radio2_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="radio3_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="radio4_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="radio5_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="radio6_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="radio7_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="radio8_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
+		<p id="radio9_gradient" style="visibility:hidden;">bottom, #808080 5%, #d3d3d3 53%</p>
 		
 		<div id="text9"><div id="text9_text" >Odpowiedź</div>
 		</div>
@@ -119,6 +170,16 @@
 		<div id="text0"><div id="text0_text" >Odpowiedź</div>
 		</div>
 		
+		<p id="text0_punktacja" style="visibility:hidden;">0</p>
+		<p id="text1_punktacja" style="visibility:hidden;">0</p>
+		<p id="text2_punktacja" style="visibility:hidden;">0</p>
+		<p id="text3_punktacja" style="visibility:hidden;">0</p>
+		<p id="text4_punktacja" style="visibility:hidden;">0</p>
+		<p id="text5_punktacja" style="visibility:hidden;">0</p>
+		<p id="text6_punktacja" style="visibility:hidden;">0</p>
+		<p id="text7_punktacja" style="visibility:hidden;">0</p>
+		<p id="text8_punktacja" style="visibility:hidden;">0</p>
+		<p id="text9_punktacja" style="visibility:hidden;">0</p>
 		
 		<div id="play0"><img src="images/play.png" alt="play" height="35" width="35" style="margin-left:6px; margin-top:-2px;" > 
 		</div>

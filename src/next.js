@@ -125,7 +125,8 @@ $(document).ready(function() {
 			   	type: "POST",
 			   	url: "insert.php",
 			   	data: {bool:$new,
-			   		numer_strony:($ktora_strona)
+			   		numer_strony:($ktora_strona),
+					nazwa_testu:($.cookie("nazwa"))
 			   		
 				},
 			   	success: function(){
@@ -156,5 +157,5 @@ $(document).ready(function() {
 });
 
 function nowa(){
-	window.location = location.href ;
+	window.location.reload();
 }
