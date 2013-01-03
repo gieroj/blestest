@@ -10,23 +10,23 @@ $(document).ready(function() {
 	$('#paginator0').click(function(el) {
 		document.body.style.cursor = "wait";
 		$('#paginator0').css('cursor', 'wait');
-		zapis_obecnej(el,'0');
+		zapis_obecnej(el,'1');
 	});
 	
 	$('#paginator1').click(function(el) {
 		$nazwa_elementu='#paginator1';
 		document.body.style.cursor = "wait";
 		$($nazwa_elementu).css('cursor', 'wait');
-		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-2){
+		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-1){
 			$strony=parseInt($.cookie("strony"));
 			$strony++;
 			$.cookie("strony",$strony);
 			$.cookie("strona",$strony);
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-2));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
 		}
 		else{
-			console.log(parseInt($($nazwa_elementu+'_text').text())-1);
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
+			console.log(parseInt($($nazwa_elementu+'_text').text()));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())));
 		}
 	});
 	
@@ -34,16 +34,16 @@ $(document).ready(function() {
 		$nazwa_elementu='#paginator2';
 		document.body.style.cursor = "wait";
 		$($nazwa_elementu).css('cursor', 'wait');
-		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-2){
+		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-1){
 			$strony=parseInt($.cookie("strony"));
 			$strony++;
 			$.cookie("strony",$strony);
 			$.cookie("strona",$strony);
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-2));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
 			
 		}
 		else{
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
+			zapis_obecnej(el,parseInt($($nazwa_elementu+'_text').text()));
 		}
 	});
 	
@@ -51,16 +51,16 @@ $(document).ready(function() {
 		$nazwa_elementu='#paginator3';
 		document.body.style.cursor = "wait";
 		$($nazwa_elementu).css('cursor', 'wait');
-		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-2){
+		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-1){
 			$strony=parseInt($.cookie("strony"));
 			$strony++;
 			$.cookie("strony",$strony);
 			$.cookie("strona",$strony);
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-2));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
 			
 		}
 		else{
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())));
 		}
 	});
 	
@@ -68,16 +68,16 @@ $(document).ready(function() {
 		$nazwa_elementu='#paginator4';
 		document.body.style.cursor = "wait";
 		$($nazwa_elementu).css('cursor', 'wait');
-		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-2){
+		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-1){
 			$strony=parseInt($.cookie("strony"));
 			$strony++;
 			$.cookie("strony",$strony);
 			$.cookie("strona",$strony);
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-2));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
 			
 		}
 		else{
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())));
 		}
 	});
 	
@@ -85,16 +85,16 @@ $(document).ready(function() {
 		$nazwa_elementu='#paginator5';
 		document.body.style.cursor = "wait";
 		$($nazwa_elementu).css('cursor', 'wait');
-		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-2){
-			$strony=parseInt($.cookie("strony"));
+		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-1){
+		/*	$strony=parseInt($.cookie("strony"));
 			$strony++;
 			$.cookie("strony",$strony);
-			$.cookie("strona",$strony);
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-2));
+			$.cookie("strona",$strony);*/
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())));
 			
 		}
 		else{
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())));
 		}
 	});
 	
@@ -102,16 +102,16 @@ $(document).ready(function() {
 		$nazwa_elementu='#paginator6';
 		document.body.style.cursor = "wait";
 		$($nazwa_elementu).css('cursor', 'wait');
-		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-2){
+		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-1){
 			$strony=parseInt($.cookie("strony"));
 			$strony++;
 			$.cookie("strony",$strony);
 			$.cookie("strona",$strony);
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-2));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
 			
 		}
 		else{
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())));
 		}
 	});
 	
@@ -119,16 +119,16 @@ $(document).ready(function() {
 		$nazwa_elementu='#paginator7';
 		document.body.style.cursor = "wait";
 		$($nazwa_elementu).css('cursor', 'wait');
-		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-2){
+		if(parseInt($.cookie("strony")) == parseInt($($nazwa_elementu+'_text').text())-1){
 			$strony=parseInt($.cookie("strony"));
 			$strony++;
 			$.cookie("strony",$strony);
 			$.cookie("strona",$strony);
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-2));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
 			
 		}
 		else{
-			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())-1));
+			zapis_obecnej(el,(parseInt($($nazwa_elementu+'_text').text())));
 		}
 	});
 	
@@ -136,39 +136,38 @@ $(document).ready(function() {
 		$nazwa_elementu='#paginator8';
 		document.body.style.cursor = "wait";
 		$($nazwa_elementu).css('cursor', 'wait');
-		if($.cookie("strony") == $($nazwa_elementu+'_text').text()-2){
+		if($.cookie("strony") == $($nazwa_elementu+'_text').text()-1){
 			$strony=$.cookie("strony");
 			$strony++;
 			$.cookie("strony",$strony);
-			zapis_obecnej(el,($($nazwa_elementu+'_text').text()-2));
+			zapis_obecnej(el,($($nazwa_elementu+'_text').text()-1));
 			$.cookie("strona",$strony);
 		}
 		else{
-			zapis_obecnej(el,($($nazwa_elementu+'_text').text()-1));
+			zapis_obecnej(el,($($nazwa_elementu+'_text').text()));
 		}
 	});
 });
 
 function chowaj_paginator(ilosc_stron){
-	if(ilosc_stron<8){
-		for ($i=8;$i-1>ilosc_stron;$i--){
+	if(ilosc_stron<=8){
+		for ($i=8;$i>=ilosc_stron;$i--){
 			$('#paginator'+$i).css("visibility", "hidden");
 		};
-		$('#paginator'+$.cookie("strona")).css("background","DarkGray");
-		
+		//$('#paginator'+(parseInt($.cookie("strona")))).css("background","DarkGray");
 	}
 }
 
 function zmiana_numerow(){
 	$ilosc_stron=parseInt($.cookie("strony"));
 	$ktora_strona=parseInt($.cookie("strona"));
-	$('#paginator8_text').text($ilosc_stron +2);
+	$('#paginator8_text').text($ilosc_stron );
 	if ($ilosc_stron>8) {
 		
 		if($ktora_strona>=$ilosc_stron-5){
 			$z=8;
 			for($i=$ilosc_stron;$i>$ilosc_stron-8;$i--){
-				$('#paginator'+$z+'_text').text($i+2);
+				$('#paginator'+$z+'_text').text($i);
 				$z--;
 			}
 		}
@@ -176,17 +175,16 @@ function zmiana_numerow(){
 		{
 			$z=7
 			for($i=$ktora_strona+2;$i>=$ktora_strona-4;$i--){
-				$('#paginator'+$z+'_text').text($i+2);
+				$('#paginator'+$z+'_text').text($i+1);
 				$z--;
 			}
 		}
-		
-		for($i=0;$i<=$ilosc_stron;$i++){
-			if($('#paginator'+$i+'_text').text()== ($ktora_strona+1)){
+	};
+	for($i=0;$i<=$ilosc_stron;$i++){
+			if(parseInt($('#paginator'+$i+'_text').text())== $ktora_strona ){
 				$('#paginator'+$i).css("background","DarkGray");
 			}
 		}
-	};
 }
 
 function zapis_obecnej(el,strona_wczytania){

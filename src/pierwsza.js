@@ -56,9 +56,8 @@ $(document).ready(function() {
 		var str=$('#text3').val();
 		var n=str.replace(" ","_i_"); 
 		$.cookie("nazwa",n);
-		$.cookie("strony",0);
-		$.cookie("strona",0);
-		$.cookie("edycja",0);
+		$.cookie("strony",1);
+		$.cookie("strona",1);
 		$new="1";
 		$poprawne=false;
 		$.ajax({

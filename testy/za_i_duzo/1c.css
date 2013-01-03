@@ -106,13 +106,13 @@ background-image: -o-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
-}#radio0_text
+}#check0_text
 {
 text-align:start;
 line-height:7.56667px;
 overflow:hidden;
 margin-top:-12px;
-}#check0_text
+}#radio0_text
 {
 text-align:start;
 line-height:7.56667px;
@@ -124,7 +124,7 @@ text-align:start;
 line-height:7.56667px;
 overflow:hidden;
 margin-top:-12px;
-}#radio2_text
+}#radio5_text
 {
 text-align:start;
 line-height:7.56667px;
@@ -136,7 +136,7 @@ text-align:start;
 line-height:7.56667px;
 overflow:hidden;
 margin-top:-12px;
-}#radio5_text
+}#radio2_text
 {
 text-align:start;
 line-height:7.56667px;

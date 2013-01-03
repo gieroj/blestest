@@ -138,8 +138,8 @@ $(document).ready(function() {
 		document.close();
 		//odswierzenie okna po 4 sekundach
 		window.setTimeout(nowa, 4000);
-		if($.cookie("strony")==$.cookie("strona")){
-			$ile_stron=$.cookie("strony");
+		if(parseInt($.cookie("strony"))==parseInt($.cookie("strona"))){
+			$ile_stron=parseInt($.cookie("strony"));
 			$ile_stron++;
 			$.cookie("strony",$ile_stron);
 			$ktora_strona=$.cookie("strona");

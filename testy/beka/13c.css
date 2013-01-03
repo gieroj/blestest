@@ -2,7 +2,7 @@
 {
 background-color:rgb(211, 211, 211);
 background-image:url("http://localhost/aptana/test/blestest/src/back/tulipany.jpg");
-}#radio0
+}#check0
 {
 background-color:rgb(192, 192, 192);
 border-width:0.916667px;
@@ -15,7 +15,7 @@ background-image: -o-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
-}#radio1
+}#radio0
 {
 background-color:rgb(192, 192, 192);
 border-width:0.916667px;
@@ -41,12 +41,6 @@ background-image: -o-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
 background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
-}#pytanie0_text
-{
-text-align:start;
-line-height:7.56667px;
-overflow:hidden;
-margin-top:-6px;
 }#text1
 {
 background-color:rgb(192, 192, 192);
@@ -67,12 +61,6 @@ line-height:7.56667px;
 overflow:hidden;
 margin-top:-12px;
 }#radio0_text
-{
-text-align:start;
-line-height:7.56667px;
-overflow:hidden;
-margin-top:-12px;
-}#radio1_text
 {
 text-align:start;
 line-height:7.56667px;

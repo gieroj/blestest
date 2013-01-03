@@ -1,0 +1,24 @@
+#miejsce
+{
+background-color:rgb(211, 211, 211);
+background-image:url("http://localhost/aptana/test/blestest/src/back/tulipany.jpg");
+}#check0
+{
+background-color:rgb(192, 192, 192);
+border-width:0.916667px;
+border-style:solid;
+border-color:rgb(128, 128, 128);
+border-radius:5px;
+box-shadow:rgb(136, 136, 136) 3px 5px 5px 0px;
+background-image: linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+background-image: -o-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+background-image: -moz-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+background-image: -webkit-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+background-image: -ms-linear-gradient(bottom, #808080 5%, #d3d3d3 53%);
+}#check0_text
+{
+text-align:start;
+line-height:7.56667px;
+overflow:hidden;
+margin-top:-12px;
+}

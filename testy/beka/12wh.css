@@ -1,0 +1,33 @@
+body
+		{
+		    width: 720px;
+		    margin: 0px 0px;
+		}#miejsce
+{
+width:720px;
+height:480px;
+}#radio0
+{
+position: absolute;
+width:48.166666px;
+height:223.166666px;
+top:230px;
+left:180px;
+z-index:10;
+}#radio1
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:250px;
+left:280px;
+z-index:9;
+}#text0
+{
+position: absolute;
+width:98.166666px;
+height:33.166666px;
+top:380px;
+left:300px;
+z-index:10;
+}

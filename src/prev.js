@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	
 	if( parseInt($.cookie("strona"))>=0 &&  parseInt($.cookie("strona"))<=parseInt($.cookie("strony")) ){
-		
+		document.close();
 		load_file('./testy/'+$.cookie("nazwa")+'/'+$.cookie("strona")+'wh.css',"css");
 		//console.log('./testy/'+$.cookie("nazwa")+'/'+$.cookie("strona")+'wh.css');
 		
