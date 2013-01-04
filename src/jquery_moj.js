@@ -826,7 +826,7 @@ $(function() {
 				//console.log('Clicked on ' + $(this).text());
 				// hide the menu
 				$element = "#" + opt.$trigger.attr("id");
-
+				$($element+"_gradient").text("0");
 				$($element).css("background-image", 'none');
 				if ($(this).text() == "label 1") {
 					$($element).css("background-color", "Black");
@@ -1895,29 +1895,38 @@ $(function() {
 			gradient : {
 				type : 'text',
 				name : "Gradient",
-				value : "bottom, #808080 5%, #d3d3d3 53%",
+				value : $(itemek+"_gradient").text(),
 				icon : "edit",
 				events : {
 					keyup : function(e) {
 						// add some fancy key handling here?
 						if (e.keyCode == 13) {
-							if ($(this).val() == "") {
-								$(itemek).css("background-image", "linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-moz-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-o-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-webkit-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-ms-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								zaczarowany_gradient = "#808080 0%, #d3d3d3 100%";
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
+							if ($(this).val() == "" || $(this).val() == "0" ) {
+								$(itemek+"_gradient").text("0");
+								$(itemek).css("background-image","none");
 							} else {
-								zaczarowany_gradient = $(this).val();
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
-								$(itemek).css("background-image", "linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-moz-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-o-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-webkit-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-ms-linear-gradient(" + $(this).val() + ")");
+								$(itemek+"_gradient").text($(this).val());
+								$(itemek).css("background-image","linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-o-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-moz-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-webkit-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-ms-linear-gradient("+$(this).val()+")");
 							}
+						}
+					}
+				}
+			},
+			punktacja : {
+				type : 'text',
+				name : "Punktacja",
+				value :  $(itemek+"_punktacja").text(),
+				icon : "edit",
+				events : {
+					keyup : function(e) {
+						// add some fancy key handling here?
+						if (e.keyCode == 13) {
+							$(itemek+"_punktacja").text($(this).val());
+							//console.log($(itemek+"_punktacja").text());
 						}
 					}
 				}
@@ -1955,6 +1964,14 @@ $(function() {
 					color : {
 						name : "Color",
 						value : rgb2hex($(itemek).css("background-color"))
+					},
+					gradient : {
+						name : "Gradient",
+						value : $(itemek+"_gradient").text()
+					},
+					punktacja : {
+						name : "Punktacja",
+						value : $(itemek+"_punktacja").text()
 					}
 				}
 			};
@@ -2090,29 +2107,38 @@ $(function() {
 			gradient : {
 				type : 'text',
 				name : "Gradient",
-				value : "bottom, #808080 5%, #d3d3d3 53%",
+				value : $(itemek+"_gradient").text(),
 				icon : "edit",
 				events : {
 					keyup : function(e) {
 						// add some fancy key handling here?
 						if (e.keyCode == 13) {
-							if ($(this).val() == "") {
-								$(itemek).css("background-image", "linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-moz-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-o-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-webkit-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-ms-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								zaczarowany_gradient = "#808080 0%, #d3d3d3 100%";
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
+							if ($(this).val() == "" || $(this).val() == "0" ) {
+								$(itemek+"_gradient").text("0");
+								$(itemek).css("background-image","none");
 							} else {
-								zaczarowany_gradient = $(this).val();
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
-								$(itemek).css("background-image", "linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-moz-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-o-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-webkit-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-ms-linear-gradient(" + $(this).val() + ")");
+								$(itemek+"_gradient").text($(this).val());
+								$(itemek).css("background-image","linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-o-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-moz-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-webkit-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-ms-linear-gradient("+$(this).val()+")");
 							}
+						}
+					}
+				}
+			},
+			punktacja : {
+				type : 'text',
+				name : "Punktacja",
+				value :  $(itemek+"_punktacja").text(),
+				icon : "edit",
+				events : {
+					keyup : function(e) {
+						// add some fancy key handling here?
+						if (e.keyCode == 13) {
+							$(itemek+"_punktacja").text($(this).val());
+							//console.log($(itemek+"_punktacja").text());
 						}
 					}
 				}
@@ -2150,6 +2176,14 @@ $(function() {
 					color : {
 						name : "Color",
 						value : rgb2hex($(itemek).css("background-color"))
+					},
+					gradient : {
+						name : "Gradient",
+						value : $(itemek+"_gradient").text()
+					},
+					punktacja : {
+						name : "Punktacja",
+						value : $(itemek+"_punktacja").text()
 					}
 				}
 			};
@@ -2285,29 +2319,38 @@ $(function() {
 			gradient : {
 				type : 'text',
 				name : "Gradient",
-				value : "bottom, #808080 5%, #d3d3d3 53%",
+				value : $(itemek+"_gradient").text(),
 				icon : "edit",
 				events : {
 					keyup : function(e) {
 						// add some fancy key handling here?
 						if (e.keyCode == 13) {
-							if ($(this).val() == "") {
-								$(itemek).css("background-image", "linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-moz-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-o-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-webkit-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-ms-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								zaczarowany_gradient = "#808080 0%, #d3d3d3 100%";
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
+							if ($(this).val() == "" || $(this).val() == "0" ) {
+								$(itemek+"_gradient").text("0");
+								$(itemek).css("background-image","none");
 							} else {
-								zaczarowany_gradient = $(this).val();
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
-								$(itemek).css("background-image", "linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-moz-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-o-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-webkit-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-ms-linear-gradient(" + $(this).val() + ")");
+								$(itemek+"_gradient").text($(this).val());
+								$(itemek).css("background-image","linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-o-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-moz-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-webkit-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-ms-linear-gradient("+$(this).val()+")");
 							}
+						}
+					}
+				}
+			},
+			punktacja : {
+				type : 'text',
+				name : "Punktacja",
+				value :  $(itemek+"_punktacja").text(),
+				icon : "edit",
+				events : {
+					keyup : function(e) {
+						// add some fancy key handling here?
+						if (e.keyCode == 13) {
+							$(itemek+"_punktacja").text($(this).val());
+							//console.log($(itemek+"_punktacja").text());
 						}
 					}
 				}
@@ -2345,6 +2388,14 @@ $(function() {
 					color : {
 						name : "Color",
 						value : rgb2hex($(itemek).css("background-color"))
+					},
+					gradient : {
+						name : "Gradient",
+						value : $(itemek+"_gradient").text()
+					},
+					punktacja : {
+						name : "Punktacja",
+						value : $(itemek+"_punktacja").text()
 					}
 				}
 			};
@@ -2480,29 +2531,38 @@ $(function() {
 			gradient : {
 				type : 'text',
 				name : "Gradient",
-				value : "bottom, #808080 5%, #d3d3d3 53%",
+				value : $(itemek+"_gradient").text(),
 				icon : "edit",
 				events : {
 					keyup : function(e) {
 						// add some fancy key handling here?
 						if (e.keyCode == 13) {
-							if ($(this).val() == "") {
-								$(itemek).css("background-image", "linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-moz-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-o-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-webkit-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-ms-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								zaczarowany_gradient = "#808080 0%, #d3d3d3 100%";
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
+							if ($(this).val() == "" || $(this).val() == "0" ) {
+								$(itemek+"_gradient").text("0");
+								$(itemek).css("background-image","none");
 							} else {
-								zaczarowany_gradient = $(this).val();
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
-								$(itemek).css("background-image", "linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-moz-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-o-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-webkit-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-ms-linear-gradient(" + $(this).val() + ")");
+								$(itemek+"_gradient").text($(this).val());
+								$(itemek).css("background-image","linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-o-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-moz-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-webkit-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-ms-linear-gradient("+$(this).val()+")");
 							}
+						}
+					}
+				}
+			},
+			punktacja : {
+				type : 'text',
+				name : "Punktacja",
+				value :  $(itemek+"_punktacja").text(),
+				icon : "edit",
+				events : {
+					keyup : function(e) {
+						// add some fancy key handling here?
+						if (e.keyCode == 13) {
+							$(itemek+"_punktacja").text($(this).val());
+							//console.log($(itemek+"_punktacja").text());
 						}
 					}
 				}
@@ -2540,6 +2600,14 @@ $(function() {
 					color : {
 						name : "Color",
 						value : rgb2hex($(itemek).css("background-color"))
+					},
+					gradient : {
+						name : "Gradient",
+						value : $(itemek+"_gradient").text()
+					},
+					punktacja : {
+						name : "Punktacja",
+						value : $(itemek+"_punktacja").text()
 					}
 				}
 			};
@@ -2675,29 +2743,38 @@ $(function() {
 			gradient : {
 				type : 'text',
 				name : "Gradient",
-				value : "bottom, #808080 5%, #d3d3d3 53%",
+				value : $(itemek+"_gradient").text(),
 				icon : "edit",
 				events : {
 					keyup : function(e) {
 						// add some fancy key handling here?
 						if (e.keyCode == 13) {
-							if ($(this).val() == "") {
-								$(itemek).css("background-image", "linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-moz-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-o-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-webkit-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-ms-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								zaczarowany_gradient = "#808080 0%, #d3d3d3 100%";
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
+							if ($(this).val() == "" || $(this).val() == "0" ) {
+								$(itemek+"_gradient").text("0");
+								$(itemek).css("background-image","none");
 							} else {
-								zaczarowany_gradient = $(this).val();
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
-								$(itemek).css("background-image", "linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-moz-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-o-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-webkit-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-ms-linear-gradient(" + $(this).val() + ")");
+								$(itemek+"_gradient").text($(this).val());
+								$(itemek).css("background-image","linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-o-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-moz-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-webkit-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-ms-linear-gradient("+$(this).val()+")");
 							}
+						}
+					}
+				}
+			},
+			punktacja : {
+				type : 'text',
+				name : "Punktacja",
+				value :  $(itemek+"_punktacja").text(),
+				icon : "edit",
+				events : {
+					keyup : function(e) {
+						// add some fancy key handling here?
+						if (e.keyCode == 13) {
+							$(itemek+"_punktacja").text($(this).val());
+							//console.log($(itemek+"_punktacja").text());
 						}
 					}
 				}
@@ -2735,6 +2812,14 @@ $(function() {
 					color : {
 						name : "Color",
 						value : rgb2hex($(itemek).css("background-color"))
+					},
+					gradient : {
+						name : "Gradient",
+						value : $(itemek+"_gradient").text()
+					},
+					punktacja : {
+						name : "Punktacja",
+						value : $(itemek+"_punktacja").text()
 					}
 				}
 			};
@@ -2870,29 +2955,38 @@ $(function() {
 			gradient : {
 				type : 'text',
 				name : "Gradient",
-				value : "bottom, #808080 5%, #d3d3d3 53%",
+				value : $(itemek+"_gradient").text(),
 				icon : "edit",
 				events : {
 					keyup : function(e) {
 						// add some fancy key handling here?
 						if (e.keyCode == 13) {
-							if ($(this).val() == "") {
-								$(itemek).css("background-image", "linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-moz-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-o-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-webkit-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-ms-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								zaczarowany_gradient = "#808080 0%, #d3d3d3 100%";
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
+							if ($(this).val() == "" || $(this).val() == "0" ) {
+								$(itemek+"_gradient").text("0");
+								$(itemek).css("background-image","none");
 							} else {
-								zaczarowany_gradient = $(this).val();
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
-								$(itemek).css("background-image", "linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-moz-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-o-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-webkit-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-ms-linear-gradient(" + $(this).val() + ")");
+								$(itemek+"_gradient").text($(this).val());
+								$(itemek).css("background-image","linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-o-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-moz-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-webkit-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-ms-linear-gradient("+$(this).val()+")");
 							}
+						}
+					}
+				}
+			},
+			punktacja : {
+				type : 'text',
+				name : "Punktacja",
+				value :  $(itemek+"_punktacja").text(),
+				icon : "edit",
+				events : {
+					keyup : function(e) {
+						// add some fancy key handling here?
+						if (e.keyCode == 13) {
+							$(itemek+"_punktacja").text($(this).val());
+							//console.log($(itemek+"_punktacja").text());
 						}
 					}
 				}
@@ -2930,6 +3024,14 @@ $(function() {
 					color : {
 						name : "Color",
 						value : rgb2hex($(itemek).css("background-color"))
+					},
+					gradient : {
+						name : "Gradient",
+						value : $(itemek+"_gradient").text()
+					},
+					punktacja : {
+						name : "Punktacja",
+						value : $(itemek+"_punktacja").text()
 					}
 				}
 			};
@@ -3065,29 +3167,38 @@ $(function() {
 			gradient : {
 				type : 'text',
 				name : "Gradient",
-				value : "bottom, #808080 5%, #d3d3d3 53%",
+				value : $(itemek+"_gradient").text(),
 				icon : "edit",
 				events : {
 					keyup : function(e) {
 						// add some fancy key handling here?
 						if (e.keyCode == 13) {
-							if ($(this).val() == "") {
-								$(itemek).css("background-image", "linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-moz-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-o-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-webkit-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-ms-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								zaczarowany_gradient = "#808080 0%, #d3d3d3 100%";
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
+							if ($(this).val() == "" || $(this).val() == "0" ) {
+								$(itemek+"_gradient").text("0");
+								$(itemek).css("background-image","none");
 							} else {
-								zaczarowany_gradient = $(this).val();
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
-								$(itemek).css("background-image", "linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-moz-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-o-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-webkit-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-ms-linear-gradient(" + $(this).val() + ")");
+								$(itemek+"_gradient").text($(this).val());
+								$(itemek).css("background-image","linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-o-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-moz-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-webkit-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-ms-linear-gradient("+$(this).val()+")");
 							}
+						}
+					}
+				}
+			},
+			punktacja : {
+				type : 'text',
+				name : "Punktacja",
+				value :  $(itemek+"_punktacja").text(),
+				icon : "edit",
+				events : {
+					keyup : function(e) {
+						// add some fancy key handling here?
+						if (e.keyCode == 13) {
+							$(itemek+"_punktacja").text($(this).val());
+							//console.log($(itemek+"_punktacja").text());
 						}
 					}
 				}
@@ -3125,6 +3236,14 @@ $(function() {
 					color : {
 						name : "Color",
 						value : rgb2hex($(itemek).css("background-color"))
+					},
+					gradient : {
+						name : "Gradient",
+						value : $(itemek+"_gradient").text()
+					},
+					punktacja : {
+						name : "Punktacja",
+						value : $(itemek+"_punktacja").text()
 					}
 				}
 			};
@@ -3260,29 +3379,38 @@ $(function() {
 			gradient : {
 				type : 'text',
 				name : "Gradient",
-				value : "bottom, #808080 5%, #d3d3d3 53%",
+				value : $(itemek+"_gradient").text(),
 				icon : "edit",
 				events : {
 					keyup : function(e) {
 						// add some fancy key handling here?
 						if (e.keyCode == 13) {
-							if ($(this).val() == "") {
-								$(itemek).css("background-image", "linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-moz-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-o-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-webkit-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-ms-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								zaczarowany_gradient = "#808080 0%, #d3d3d3 100%";
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
+							if ($(this).val() == "" || $(this).val() == "0" ) {
+								$(itemek+"_gradient").text("0");
+								$(itemek).css("background-image","none");
 							} else {
-								zaczarowany_gradient = $(this).val();
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
-								$(itemek).css("background-image", "linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-moz-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-o-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-webkit-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-ms-linear-gradient(" + $(this).val() + ")");
+								$(itemek+"_gradient").text($(this).val());
+								$(itemek).css("background-image","linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-o-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-moz-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-webkit-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-ms-linear-gradient("+$(this).val()+")");
 							}
+						}
+					}
+				}
+			},
+			punktacja : {
+				type : 'text',
+				name : "Punktacja",
+				value :  $(itemek+"_punktacja").text(),
+				icon : "edit",
+				events : {
+					keyup : function(e) {
+						// add some fancy key handling here?
+						if (e.keyCode == 13) {
+							$(itemek+"_punktacja").text($(this).val());
+							//console.log($(itemek+"_punktacja").text());
 						}
 					}
 				}
@@ -3320,6 +3448,14 @@ $(function() {
 					color : {
 						name : "Color",
 						value : rgb2hex($(itemek).css("background-color"))
+					},
+					gradient : {
+						name : "Gradient",
+						value : $(itemek+"_gradient").text()
+					},
+					punktacja : {
+						name : "Punktacja",
+						value : $(itemek+"_punktacja").text()
 					}
 				}
 			};
@@ -3455,29 +3591,38 @@ $(function() {
 			gradient : {
 				type : 'text',
 				name : "Gradient",
-				value : "bottom, #808080 5%, #d3d3d3 53%",
+				value : $(itemek+"_gradient").text(),
 				icon : "edit",
 				events : {
 					keyup : function(e) {
 						// add some fancy key handling here?
 						if (e.keyCode == 13) {
-							if ($(this).val() == "") {
-								$(itemek).css("background-image", "linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-moz-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-o-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-webkit-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-ms-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								zaczarowany_gradient = "#808080 0%, #d3d3d3 100%";
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
+							if ($(this).val() == "" || $(this).val() == "0" ) {
+								$(itemek+"_gradient").text("0");
+								$(itemek).css("background-image","none");
 							} else {
-								zaczarowany_gradient = $(this).val();
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
-								$(itemek).css("background-image", "linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-moz-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-o-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-webkit-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-ms-linear-gradient(" + $(this).val() + ")");
+								$(itemek+"_gradient").text($(this).val());
+								$(itemek).css("background-image","linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-o-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-moz-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-webkit-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-ms-linear-gradient("+$(this).val()+")");
 							}
+						}
+					}
+				}
+			},
+			punktacja : {
+				type : 'text',
+				name : "Punktacja",
+				value :  $(itemek+"_punktacja").text(),
+				icon : "edit",
+				events : {
+					keyup : function(e) {
+						// add some fancy key handling here?
+						if (e.keyCode == 13) {
+							$(itemek+"_punktacja").text($(this).val());
+							//console.log($(itemek+"_punktacja").text());
 						}
 					}
 				}
@@ -3515,6 +3660,14 @@ $(function() {
 					color : {
 						name : "Color",
 						value : rgb2hex($(itemek).css("background-color"))
+					},
+					gradient : {
+						name : "Gradient",
+						value : $(itemek+"_gradient").text()
+					},
+					punktacja : {
+						name : "Punktacja",
+						value : $(itemek+"_punktacja").text()
 					}
 				}
 			};
@@ -3650,29 +3803,38 @@ $(function() {
 			gradient : {
 				type : 'text',
 				name : "Gradient",
-				value : "bottom, #808080 5%, #d3d3d3 53%",
+				value : $(itemek+"_gradient").text(),
 				icon : "edit",
 				events : {
 					keyup : function(e) {
 						// add some fancy key handling here?
 						if (e.keyCode == 13) {
-							if ($(this).val() == "") {
-								$(itemek).css("background-image", "linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-moz-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-o-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-webkit-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								$(itemek).css("background-image", "-ms-linear-gradient(#808080 0%, #d3d3d3 100%)");
-								zaczarowany_gradient = "#808080 0%, #d3d3d3 100%";
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
+							if ($(this).val() == "" || $(this).val() == "0" ) {
+								$(itemek+"_gradient").text("0");
+								$(itemek).css("background-image","none");
 							} else {
-								zaczarowany_gradient = $(this).val();
-								$.cookie(itemek+"_gradient", zaczarowany_gradient);
-								$(itemek).css("background-image", "linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-moz-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-o-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-webkit-linear-gradient(" + $(this).val() + ")");
-								$(itemek).css("background-image", "-ms-linear-gradient(" + $(this).val() + ")");
+								$(itemek+"_gradient").text($(this).val());
+								$(itemek).css("background-image","linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-o-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-moz-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-webkit-linear-gradient("+$(this).val()+")");
+								$(itemek).css("background-image","-ms-linear-gradient("+$(this).val()+")");
 							}
+						}
+					}
+				}
+			},
+			punktacja : {
+				type : 'text',
+				name : "Punktacja",
+				value :  $(itemek+"_punktacja").text(),
+				icon : "edit",
+				events : {
+					keyup : function(e) {
+						// add some fancy key handling here?
+						if (e.keyCode == 13) {
+							$(itemek+"_punktacja").text($(this).val());
+							//console.log($(itemek+"_punktacja").text());
 						}
 					}
 				}
@@ -3710,6 +3872,14 @@ $(function() {
 					color : {
 						name : "Color",
 						value : rgb2hex($(itemek).css("background-color"))
+					},
+					gradient : {
+						name : "Gradient",
+						value : $(itemek+"_gradient").text()
+					},
+					punktacja : {
+						name : "Punktacja",
+						value : $(itemek+"_punktacja").text()
 					}
 				}
 			};

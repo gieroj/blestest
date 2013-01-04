@@ -46,14 +46,25 @@ $(document).ready(function() {
 						//console.log($("#"+tablica[z]+i).css('width'));
 						 
 						//var places= $("#"+tablica[z]+i).position();
-						$grad=$.cookie("#"+tablica[z]+i+"_gradient");
-						if($grad==null)
+						$grad=$("#"+tablica[z]+i+"_gradient").text();
+						if($grad==null){
 							$grad="bottom, #808080 5%, #d3d3d3 53%";
-						$gradient="background-image: linear-gradient("+$grad+");\n"
+							$gradient="background-image: linear-gradient("+$grad+");\n"
 							+"background-image: -o-linear-gradient("+$grad+");\n"
 							+"background-image: -moz-linear-gradient("+$grad+");\n"
 							+"background-image: -webkit-linear-gradient("+$grad+");\n"
 							+"background-image: -ms-linear-gradient("+$grad+");\n";
+						}
+						else if($grad=="0"){
+							$gradient="background-image: none !importatn;\n";
+						}
+						else{  
+							$gradient="background-image: linear-gradient("+$grad+");\n"
+							+"background-image: -o-linear-gradient("+$grad+");\n"
+							+"background-image: -moz-linear-gradient("+$grad+");\n"
+							+"background-image: -webkit-linear-gradient("+$grad+");\n"
+							+"background-image: -ms-linear-gradient("+$grad+");\n";
+						}
 						
 						$.ajax({
 						   	type: "POST",

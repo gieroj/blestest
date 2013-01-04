@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="jquery-ui.css" />
 	<link rel="stylesheet" href="dodawanie.css" />
 	<script src="src/paginator.js" type="text/javascript"></script>
+	<script src="src/edycja.js" type="text/javascript"></script>
 	
 </head>
 <body>
